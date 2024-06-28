@@ -6,19 +6,14 @@ Setup a 3 node key-value cache cluster on local using Redis/Memcached and write 
 
 ## Testing
 
-`curl -X PUT "http://localhost:8000/put/{key}" -H "Content-Type: application/json" -d '{"value": "{value}"}'`
+`curl -X PUT "http://localhost:8000/cache/doctor" -H "Content-Type: application/json" -d '{"value": "Aditya"}'`
 
-`curl -X GET "http://localhost:8000/get/{key}"`
+`curl -X GET "http://localhost:8000/cache/doctor"`
 
-Example - 
-
-`curl -X PUT "http://localhost:8000/put/greeting" -H "Content-Type: application/json" -d '{"value": "hello_world"}'`
-
-
-`curl -X GET "http://localhost:8000/get/greeting"`
+`curl -X DELETE "http://localhost:8000/cache/doctor"`
 
 ## Staring the server - 
 python main.py
 
 ## Api documentation - 
-http://0.0.0.0:8000/docs
+http://127.0.0.1/docs

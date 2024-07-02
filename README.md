@@ -6,7 +6,7 @@ Setup a 3 node key-value cache cluster on local using Redis/Memcached and write 
 
 ## Testing
 
-`curl -X PUT "http://localhost:8000/cache/doctor" -H "Content-Type: application/json" -d '{"value": "Aditya"}'`
+  `curl -X PUT "http://localhost:8000/cache/doctor" -H "Content-Type: application/json" -d '{"value": "Vaibhav"}'`
 
 `curl -X GET "http://localhost:8000/cache/doctor"`
 
